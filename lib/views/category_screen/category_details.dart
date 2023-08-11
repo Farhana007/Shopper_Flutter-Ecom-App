@@ -46,28 +46,31 @@ class _CategoryDetailsState extends State<CategoryDetails> {
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,
               physics: const BouncingScrollPhysics(),
-              child: Row(
-                children: List.generate(
-                  controller.subcat.length,
-                  (index) => "${controller.subcat[index]}"
-                      .text
-                      .size(12)
-                      .fontFamily(semibold)
-                      .color(darkFontGrey)
-                      .makeCentered()
-                      .box
-                      .white
-                      .rounded
-                      .size(120, 60)
-                      .margin(const EdgeInsets.symmetric(horizontal: 4))
-                      .make()
-                      .onTap(
-                    () {
-                      switchCategory("${controller.subcat[index]}");
-                      setState(
-                        () {},
-                      );
-                    },
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 15.0),
+                child: Row(
+                  children: List.generate(
+                    controller.subcat.length,
+                    (index) => "${controller.subcat[index]}"
+                        .text
+                        .size(12)
+                        .fontFamily(semibold)
+                        .color(darkFontGrey)
+                        .makeCentered()
+                        .box
+                        .white
+                        .rounded
+                        .size(120, 60)
+                        .margin(const EdgeInsets.symmetric(horizontal: 4))
+                        .make()
+                        .onTap(
+                      () {
+                        switchCategory("${controller.subcat[index]}");
+                        setState(
+                          () {},
+                        );
+                      },
+                    ),
                   ),
                 ),
               ),

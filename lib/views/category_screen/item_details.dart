@@ -209,7 +209,7 @@ class ItemDetails extends StatelessWidget {
                                       IconButton(
                                           onPressed: () {
                                             controller.increaseQuantity(
-                                                int.parse(data['p_quantity']));
+                                                (data['p_quantity']));
                                             controller.calculateTotalPrice(
                                                 int.parse(data['p_price']));
                                           },

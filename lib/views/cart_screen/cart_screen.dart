@@ -63,7 +63,7 @@ class CartScreen extends StatelessWidget {
                               width: 80,
                               height: 80,
                               child: Image.network(
-                                '${data[index]['img'][0]}',
+                                data[index]['img'][0],
                                 fit: BoxFit.cover,
                               )),
                           title: "${data[index]['title']}"
@@ -110,14 +110,6 @@ class CartScreen extends StatelessWidget {
                       .width(context.screenWidth - 60)
                       .make(),
                   10.heightBox,
-                  // SizedBox(
-                  //   width: context.screenWidth - 60,
-                  //   child: ourButton(
-                  //       color: amberColor,
-                  //       onPress: () {},
-                  //       textColor: whiteColor,
-                  //       title: "Proceed to shipping"),
-                  // )
                 ],
               ),
             );

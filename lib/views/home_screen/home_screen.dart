@@ -204,7 +204,6 @@ class HomeScreen extends StatelessWidget {
                                               .make(),
                                           10.heightBox,
                                           "${featuredData[index]['p_price']}"
-                                              .numCurrency
                                               .text
                                               .fontFamily(bold)
                                               .color(amberColor)
