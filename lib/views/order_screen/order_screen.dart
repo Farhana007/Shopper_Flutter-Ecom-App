@@ -41,7 +41,7 @@ class OrderScreen extends StatelessWidget {
                       .color(darkFontGrey)
                       .xl
                       .make(),
-                  title: data[index]['order_code']
+                  title: data[index]['orders'][index]['title']
                       .toString()
                       .text
                       .color(amberColor)
