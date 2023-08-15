@@ -63,7 +63,7 @@ class CartScreen extends StatelessWidget {
                               width: 80,
                               height: 80,
                               child: Image.network(
-                                data[index]['img'][0],
+                                data[index]['img'],
                                 fit: BoxFit.cover,
                               )),
                           title: "${data[index]['title']}"
